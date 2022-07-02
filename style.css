@@ -135,3 +135,7 @@ nav {
 #logo.closed, #search-input.closed, .nav-item p.closed, #profile.closed {
     display: none;
 }
+
+.icon, .nav-item:not(#search) {
+    cursor: pointer;
+}

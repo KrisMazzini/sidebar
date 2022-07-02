@@ -1,12 +1,16 @@
-function toggleMenu() {
-    const sidebarElements = document.querySelectorAll("#sidebar-menu, #sidebar-menu *");
-    sidebarElements.forEach(element => element.classList.toggle("closed"));
-}
+const toggleClosedClass = element => element.classList.toggle("closed");
+const removeClosedClass = element => element.classList.remove("closed");
 
-function openMenu() {
+const changeClosedElements = classListFunc => {
     const sidebarElements = document.querySelectorAll("#sidebar-menu, #sidebar-menu *");
-    sidebarElements.forEach(element => element.classList.remove("closed"));
-    
+    sidebarElements.forEach(classListFunc);
+};
+
+const toggleMenu = () => changeClosedElements(toggleClosedClass);
+const openMenu = () => changeClosedElements(removeClosedClass);
+
+const focusOnSearchInput = () => {    
+    openMenu();
     const searchInput = document.querySelector("#search-input");
     searchInput.focus();
-}
+};

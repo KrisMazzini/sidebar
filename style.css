@@ -105,6 +105,10 @@ nav {
     padding-bottom: 14px;
 }
 
+#logout.closed {
+    justify-content: center;
+}
+
 #profile {
     display: flex;
     align-items: center;
@@ -126,4 +130,8 @@ nav {
 #profile-info #role {
     font-size: 12px;
     line-height: 18px;
+}
+
+#logo.closed, #search-input.closed, .nav-item p.closed, #profile.closed {
+    display: none;
 }

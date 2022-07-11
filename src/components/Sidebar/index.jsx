@@ -30,7 +30,7 @@ export function Sidebar(props) {
     return (
         <div id="sidebar">
             <header id="menu">
-                <img src="../../public/assets/logo.svg" alt="Logo" id="logo" />
+                <img src="/logo.svg" alt="Logo" id="logo" />
                 <Icon icon="menu" alt="Menu" onclick={toggleMenu}/>
             </header>
             <nav>

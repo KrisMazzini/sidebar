@@ -40,14 +40,10 @@ nav {
     padding: 0 14px;
 }
 
-#logout.closed-sidebar {
+#menu.closed-sidebar, #logout.closed-sidebar {
     justify-content: center;
 }
 
 #logo.closed-sidebar {
     display: none;
 }
-
-/* .nav-item:not(#search) {
-    cursor: pointer;
-} */

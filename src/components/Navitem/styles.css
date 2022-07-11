@@ -1,0 +1,14 @@
+.nav-item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 13px;
+    margin-left: 27px;
+    margin-right: 14px;
+
+    overflow: hidden;
+}
+
+.nav-item p.closed-sidebar {
+    opacity: 0;
+}

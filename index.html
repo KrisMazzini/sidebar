@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,58 +14,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
-
-    <title>Vet.com</title>
-</head>
-<body>
+    <link rel="stylesheet" href="./src/styles/reset.css">
     
-    <div id="sidebar-menu">
-        <header id="menu">
-            <img src="assets/logo.svg" alt="Logo" id="logo">
-            <img src="assets/menu.svg" alt="Menu" class="icon" onclick="toggleMenu()">
-        </header>
-        <nav>
-            <div class="nav-item" id="search" onclick="focusOnSearchInput()">
-                <img src="assets/search.svg" alt="Search" class="icon">
-                <input type="text" id="search-input" placeholder="Buscar">
-            </div>
-            <div class="nav-item" name="Dashboard">
-                <img src="assets/grid.svg" alt="Dashboard" class="icon">
-                <p>Dashboard</p>
-            </div>
-            <div class="nav-item" name="Pets">
-                <img src="assets/pet.svg" alt="Pets" class="icon">
-                <p>Pets</p>
-            </div>
-            <div class="nav-item" name="Clientes">
-                <img src="assets/user.svg" alt="Clientes" class="icon">
-                <p>Clientes</p>
-            </div>
-            <div class="nav-item" name="Vets">
-                <img src="assets/vet.svg" alt="Vets" class="icon">
-                <p>Vets</p>
-            </div>
-            <div class="nav-item" name="Ajustes">
-                <img src="assets/settings.svg" alt="Ajustes" class="icon">
-                <p>Ajustes</p>
-            </div>
-        </nav>
-        <footer id="logout">
-            <div id="profile">
-                <img src="assets/photo.jpg" alt="Profile Picture" id="profile-picture">
-                <div id="profile-info">
-                    <p id="name">Eleanor Pena</p>
-                    <p id="role">Veterinária</p>
-                </div>
-            </div>
-            <img src="assets/log-out.svg" alt="Logout" class="icon">
-        </footer>
-    </div>
-    <main><h1>Dashboard</h1></main>
-
-    <script src="app.js"></script>
-
-</body>
+    <title>Vet.com</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
 </html>

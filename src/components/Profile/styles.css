@@ -1,0 +1,29 @@
+.profile {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 9px;
+}
+
+.profile.closed-sidebar {
+    display: none;
+}
+
+.profile-picture {
+    width: 45px;
+    height: 45px;
+
+    border-radius: 12px;
+}
+
+.profile-info .role {
+    line-height: 18px;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.profile-info * {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}

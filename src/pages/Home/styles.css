@@ -1,0 +1,14 @@
+.container {
+    height: 100vh;
+    display: flex;
+
+    background-color: var(--body-bg-color);
+}
+
+main {
+    padding: 18px;
+}
+
+#sidebar.closed {
+    width: 78px;
+}

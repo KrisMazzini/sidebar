@@ -1,0 +1,26 @@
+.search {
+    height: 50px;
+    margin: 0 14px;
+    padding: 13px;
+    border-radius: 12px;
+
+    background-color: var(--light-green);
+}
+
+.search input {
+    width: 100%;
+    background-color: inherit;
+}
+
+.search input, .search input:focus {
+    border: none;
+    outline: none;
+}
+
+.search input::placeholder {
+    color: var(--text-color);
+}
+
+.search input.closed-sidebar {
+    display: none;
+}
